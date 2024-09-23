@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/conteudo-principal.css">
+    <title>Youtube Cópia</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            <img src="./img/logo-do-youtube.webp" alt="Logo Youtube">
+        </div>
+
+        <div class="cabecalho__pesquisa-container">
+            <form class="cabecalho__form-pesquisa">
+                <input type="search" class="cabecalho__input-pesquisa" placeholder="Pesquisar">
+
+                <img src="./img/modo_claro/menu_superior/keyboard.svg" alt="" class="cabecalho__input-img-teclado">
+
+                <button class="cabecalho__botao-pesquisa">
+                    <img src="./img/modo_claro/menu_superior/search.svg" alt="ícone de lupa">
+                </button>
+                
+            </form>
+        </div>
+
+        <div class="cabecalho__links-e-botao-switch">
+            <ul class="cabecalho__links">
+                <li>
+                    <a href="#" class="cabecalho__videos"></a>
+                </li>
+
+                <!-- <li>
+                    <a href="#" class="cabecalho__apps"></a>
+                </li> -->
+
+                <li>
+                    <a href="#" class="cabecalho__notificacoes"></a>
+                </li>
+
+                <!-- <li>
+                    <a href="#" class="cabecalho__avatar"></a>
+                </li> -->
+            </ul>
+
+            <label class="cabecalho__switch">
+                <input type="checkbox" class="cabecalho__switch-input">
+                <span class="cabecalho__switch-slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <aside class="menu-lateral">
+        <section class="menu-lateral__secao">
+            <ul class="menu-lateral__lista menu-lateral__links-principais">
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-inicio"></i>
+                        <span>Início</span>
+                    </a>
+                </li>
+
+                <!-- <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-explorar"></i>
+                        <span>Explorar</span>
+                    </a>
+                </li> -->
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-shorts"></i>
+                        <span>Shorts</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-inscricoes"></i>
+                        <span>Inscrições</span>
+                    </a>
+                </li>
+
+                <!-- <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-biblioteca"></i>
+                        <span>Biblioteca</span>
+                    </a>
+                </li> -->
+            </ul>
+        </section>
+
+        <section class="menu-lateral__secao">
+            <span class="menu-lateral__secao-titulo">Você <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg> </span>
+            <ul class="menu-lateral__lista">
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-historico"></i>
+                        <span>Histórico</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-relogio"></i>
+                        <span>Assistir mais tarde</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-like"></i>
+                        <span>Marcados com like</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- <section class="menu-lateral__secao">
+            <span class="menu-lateral__secao-titulo">Inscrições</span>
+
+                <li class="menu-lateral__canal">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-gaveta"></i>
+                        <span>Gaveta</span>
+                    </a>
+                </li>
+
+                <li class="menu-lateral__canal">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-ballerini"></i>
+                        <span>Rafaella Ballerini</span>
+                    </a>
+                </li>
+
+                <li class="menu-lateral__canal">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-iamarino"></i>
+                        <span>Atila Iamarino</span>
+                    </a>
+                </li>
+
+                <li class="menu-lateral__canal">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-souto"></i>
+                        <span>Mario Souto</span>
+                    </a>
+                </li>
+
+                <li class="menu-lateral__canal menu-lateral__canal--colapsado">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-nerd"></i>
+                        <span>Jovem Nerd</span>
+                    </a>
+                </li>
+
+                <li class="menu-lateral__canal menu-lateral__canal--colapsado">
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-deschamps"></i>
+                        <span>Felipe Deschamps</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="menu-lateral__item menu-lateral__botao-alternar-canais">
+                <i class="menu-lateral__icone-alternar-canais"></i>
+                <span class="menu-lateral__texto-alternar-canais">Mostrar mais 2</span>
+            </button>
+        </section> -->
+
+        <section class="menu-lateral__secao">
+            <span class="menu-lateral__secao-titulo">
+                Mais do Youtube
+            </span>
+
+            <ul class="menu-lateral__lista">
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-videos"></i>
+                        <span>Vídeo Premium</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-filmes"></i>
+                        <span>Filmes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-lateral__item" href="#">
+                        <i class="menu-lateral__icone-jogos"></i>
+                        <span>Jogos</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <main class="conteudo-principal">
+        <section class="secao-categorias">
+            <button name="Tudo" class="secao-categorias__botao secao-categorias__botao--selecionado">
+                Tudo
+            </button>
+
+            <button name="Debates" class="secao-categorias__botao">
+                Música
+            </button>
+
+            <button name="Ao Vivo" class="secao-categorias__botao">
+                Mixes
+            </button>
+
+            <button name="Podcasts" class="secao-categorias__botao">
+                Podcasts
+            </button>
+
+            <button name="Front-end" class="secao-categorias__botao">
+                Ao Vivo
+            </button>
+
+            <button name="Html" class="secao-categorias__botao">
+                HTML
+            </button>
+
+            <button name="Ingles" class="secao-categorias__botao">
+                Inglês
+            </button>
+
+            <button name="Apps" class="secao-categorias__botao">
+                Apps
+            </button>
+
+            <button name="Programação" class="secao-categorias__botao">
+                Programação
+            </button>
+
+            <button name="Inteligência Artificial" class="secao-categorias__botao">
+                Inteligência Artificial
+            </button>
+            <button name="Inovação" class="secao-categorias__botao">
+                Inovação
+            </button>
+        </section>
+
+        <!-- <form class="newsletter">
+            <span class="newsletter__inscreva-se">Inscreva-se para saber as novidades!</span>
+        
+            <div class="newsletter__input-e-botao-container">
+                <input value="abc@123.com" class="newsletter__input" type="email" placeholder="Insira seu endereço de email" pattern="[a-z0-9._%+\-]{2,}@[a-z0-9.\-]+\.[a-z]{2,8}$" title="Por favor, insira um endereço de email válido.">
+                <button class="newsletter__botao-inscrever">Inscrever</button>
+            </div>
+        </form> -->
+
+        <dialog class="dialog-confirmacao">
+            <div class="dialog-confirmacao__conteudo">
+                <img class="dialog-confirmacao__img" src="./img/img-modal.png" alt="Desenho de um homem sentado em frente a um notebook e de um pássaro voando com uma carta em seu bico. O homem está sorrindo e está recebendo a carta do pássaro.">
+                <p class="dialog-confirmacao__texto">E-mail cadastrado com sucesso!</p>
+                <button class="dialog-confirmacao__fechar-modal">Ok</button>
+            </div>
+        </dialog>
+
+        <ul class="videos-container">
+
+        </ul>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
